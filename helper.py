@@ -19,7 +19,7 @@ with open(dog_breeds_category_path, 'rb') as handle:
 # feature_extractor = load_model(r'feature_extractor.h5')
 from keras.applications.resnet_v2 import ResNet50V2 , preprocess_input as resnet_preprocess
 from keras.applications.densenet import DenseNet121, preprocess_input as densenet_preprocess
-from keras.layers.merge import concatenate
+from keras.layers import concatenate
 from keras.layers import BatchNormalization, Dense, GlobalAveragePooling2D, Lambda, Dropout, InputLayer, Input
 from keras.models import Model
 
